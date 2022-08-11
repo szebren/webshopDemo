@@ -1,7 +1,7 @@
 const { Builder, Key, By, until } = require("selenium-webdriver");
-const HomePage = require("./../pagesobjects/HomePage").default;
-const LoginPage = require("./../pagesobjects/LoginPage");
-const RegisterForm = require("./../pagesobjects/RegistrationForm");
+const HomePage = require("./../pageobjects/HomePage");
+const LoginPage = require("./../pageobjects/LoginPage");
+const RegisterForm = require("./../pageobjects/RegistrationForm");
 var should = require("chai").should();
 const assert = require("assert");
 
@@ -25,7 +25,7 @@ describe("This is the block of registration", function () {
     const homePage = new HomePage(driver);
     await homePage.navigateSignIn();
     const loginPage = new LoginPage(driver);
-    await loginPage.signIn("renitest2456@gmail.com");
+    await loginPage.signIn("renitesnjj@gmail.com");
     const registerForm = new RegisterForm(driver);
     await registerForm.registerFillOut("Renata", "Szebenyi", "Test12");
 

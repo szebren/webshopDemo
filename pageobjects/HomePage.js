@@ -1,6 +1,6 @@
-import { By } from "selenium-webdriver";
+const { By } = require("selenium-webdriver");
 
-import BasePage from "./BasePage";
+const BasePage = require("./BasePage");
 
 class HomePage extends BasePage {
   constructor(driver) {
@@ -13,4 +13,4 @@ class HomePage extends BasePage {
   }
 }
 
-export default HomePage;
+module.exports = HomePage;

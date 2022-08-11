@@ -1,4 +1,4 @@
-const BasePage = require("./BasePage").default;
+const BasePage = require("./BasePage");
 const { By, until } = require("selenium-webdriver");
 
 class RegistrationForm extends BasePage {

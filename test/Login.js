@@ -1,7 +1,7 @@
 const { Builder, Key, By, until } = require("selenium-webdriver");
-const HomePage = require("./../pagesobjects/HomePage").default;
-const LoginPage = require("./../pagesobjects/LoginPage");
-const RegisterForm = require("./../pagesobjects/RegistrationForm");
+const HomePage = require("./../pageobjects/HomePage");
+const LoginPage = require("./../pageobjects/LoginPage");
+const RegisterForm = require("./../pageobjects/RegistrationForm");
 var should = require("chai").should();
 const assert = require("assert");
 
